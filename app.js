@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 
 // Create an instance of express
 const app = express();
-const PORT = process.env.PORT || 3002;
+const port = process.env.PORT || 3002;
 // Use bodyParser middleware to parse JSON bodies
 app.use(bodyParser.json());
 
@@ -38,7 +38,7 @@ app.post('/movies', (req, res) => {
 });
 
 // Start the server
-app.listen(PORT, () => {
-  console.log(`Server is running on ${PORT}`);
+app.listen(port, () => {
+  console.log(`Server is running on ${port}`);
 });
 
